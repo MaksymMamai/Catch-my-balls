@@ -8,7 +8,7 @@ public class LostBin : MonoBehaviour
     private void Start()
     {
         gotLostPosition = false;
-        defaultBinPosition = new Vector3(7, 2, 6);
+        defaultBinPosition = new Vector3(-0.76f, -2.2f, 6); 
     }
 
     private void Update()
@@ -19,7 +19,7 @@ public class LostBin : MonoBehaviour
 
     private void IdentityGotLostPosition()
     {
-        if(transform.position.x < -5 || transform.position.x > 20 || transform.position.y < -1.3 || transform.position.y > 11.5)
+        if(transform.position.x < -14 || transform.position.x > 12 || transform.position.y < -7 || transform.position.y > 7)
             gotLostPosition = true;
         else
             gotLostPosition = false;
